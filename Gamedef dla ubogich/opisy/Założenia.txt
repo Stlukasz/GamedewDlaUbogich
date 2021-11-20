@@ -1,0 +1,57 @@
+
+-mowement
+	*poruszanie się za pomocą wasd obracanie za pomocą myszy
+	*elementy parkoura i chwytanie krawędzi 
+	*kamera powinna być z perspektywy trzeciej osoby
+
+-system walki
+	*blokowanie tarczą
+	*kilku ciosowy kombos 
+	*silny atak
+	*celowanie łukiem i magią automatyczne eventualnie celowane
+	*system uników
+
+-interakcja z otoczeniem
+	*podnoszenie przedmiotów.
+	*rozmowa z NPC.
+	*używanie przedmiotów:
+		po podejściu do przedmiotu
+
+-AI przeciwników i NPC
+	*przeciwnicy powinni mieć co najmniej jedną animacje która przerywa idle.
+	*w zależności od przeciwnika powinien on gonić gracza kiedy ten zbliży się do niego na odpowiednią odległość a gdy
+ 		graczowi uda się uciec wracają na swoje miejsce początkowe.
+	*przeciwnicy mogą atakować inne typy przeciwników by dać odczucie żyjącego świata(przykładowo raptory mogą polować na wilki).
+	*NPC powinni wykonywać swoje codzienne czynności oraz nie stali w miejscu tylko poruszali się po określonych miejscach 
+	*NPC powinni odpowiednio reagować na poczynania bohatera przykładowo złe postacie będę pardziej przychylne
+	 graczowi z większym poziomem spaczenia 
+
+-HP i MP
+	*paski życia i many wypełnione w zależności od poziomu many
+	*zwiększanie oraz przywracanie mp i hp po użyciu określonych przedmiotów
+	*automatyczne odradzanie hp i mp po zdobyciu ogreślonych umiejętności
+
+-System czasu 
+	*W grze powinien być czas deefiniujący system dnia i nocy tak żeby dzień trwał ok 30 min. a noc ok 20
+	*Można przyśpieszyć czas śpiąc w łużku.
+	*Sen może także w pewnym stopniu odnawiać hp
+ 
+-Zapisy
+	*Zapisywanie gry powinno być dostępne cały z kilkoma wyjątkami:
+			#w pobliżu znajduje się przeciwnik
+			#w określonej lokacji wyłączona jest możliwość zapisu
+			#postać musi znajdować się na w miarę płaskim podłożu by zmniejszyć szanse na zły zapis pozycji gracza
+	*Zapis gry powinien uwzględniać:
+			#pozycje postaci
+			#aktualne oraz maksymalne hp i mana
+			#zabici przeciwnicy i npc
+			#triggery które definiują rozpoczęcie lub zakończenie misji
+			#ekwipunek postaci
+			#statystyki postaci
+			#ewentualny screen ekranu z widokiem naszej postaci
+	 
+
+
+
+
+
