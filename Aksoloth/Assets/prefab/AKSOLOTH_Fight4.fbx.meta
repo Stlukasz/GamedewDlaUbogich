@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: fa3761f0c91ac9c4d8f4703bf8343b66
 ModelImporter:
-  serializedVersion: 20101
+  serializedVersion: 21100
   internalIDToNameTable:
   - first:
       74: -5097121600575731516
@@ -69,6 +69,9 @@ ModelImporter:
   - first:
       74: -4403204788856242974
     second: Armature|roll
+  - first:
+      74: -7198758036422395429
+    second: Armature|slash
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -163,11 +166,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Armature|atack2
-      takeName: Armature|atack2
+      name: Armature|slash
+      takeName: Armature|slash
       internalID: 0
       firstFrame: 0
-      lastFrame: 1
+      lastFrame: 18
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -176,9 +179,9 @@ ModelImporter:
       hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
       keepOriginalOrientation: 0
       keepOriginalPositionY: 1
       keepOriginalPositionXZ: 0
@@ -187,8 +190,192 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
-      transformMask: []
-      maskType: 3
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone
+        weight: 1
+      - path: Armature/Bone/Bone.001
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/loverTentacle1_L
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/loverTentacle1_L/loverTentacle2_L
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/loverTentacle1_L/loverTentacle2_L/loverTentacle3_L
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/loverTentacle1_L/loverTentacle2_L/loverTentacle3_L/loverTentacle3_L_end
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/loverTentacle1_R
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/loverTentacle1_R/loverTentacle2_R
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/loverTentacle1_R/loverTentacle2_R/loverTentacle3_R
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/loverTentacle1_R/loverTentacle2_R/loverTentacle3_R/loverTentacle3_R_end
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/middleTentacle1_L
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/middleTentacle1_L/middleTentacle2_L
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/middleTentacle1_L/middleTentacle2_L/middleTentacle3_L
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/middleTentacle1_L/middleTentacle2_L/middleTentacle3_L/middleTentacle4_L
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/middleTentacle1_L/middleTentacle2_L/middleTentacle3_L/middleTentacle4_L/middleTentacle4_L_end
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/middleTentacle1_R
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/middleTentacle1_R/middleTentacle2_R
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/middleTentacle1_R/middleTentacle2_R/middleTentacle3_R
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/middleTentacle1_R/middleTentacle2_R/middleTentacle3_R/middleTentacle4_R
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/middleTentacle1_R/middleTentacle2_R/middleTentacle3_R/middleTentacle4_R/middleTentacle4_R_end
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/upperTentacle1_L
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/upperTentacle1_L/upperTentacle2_L
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/upperTentacle1_L/upperTentacle2_L/upperTentacle3_L
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/upperTentacle1_L/upperTentacle2_L/upperTentacle3_L/upperTentacle4_L
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/upperTentacle1_L/upperTentacle2_L/upperTentacle3_L/upperTentacle4_L/upperTentacle4_L_end
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/upperTentacle1_R
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/upperTentacle1_R/upperTentacle2_R
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/upperTentacle1_R/upperTentacle2_R/upperTentacle3_R
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/upperTentacle1_R/upperTentacle2_R/upperTentacle3_R/upperTentacle4_R
+        weight: 1
+      - path: Armature/Bone/Bone.001/Bone.002/upperTentacle1_R/upperTentacle2_R/upperTentacle3_R/upperTentacle4_R/upperTentacle4_R_end
+        weight: 1
+      - path: Armature/Bone/Bone.001/upperarm_L
+        weight: 1
+      - path: Armature/Bone/Bone.001/upperarm_L/loverarm_L
+        weight: 1
+      - path: Armature/Bone/Bone.001/upperarm_L/loverarm_L/hand_L
+        weight: 1
+      - path: Armature/Bone/Bone.001/upperarm_L/loverarm_L/hand_L/hand_L_end
+        weight: 1
+      - path: Armature/Bone/Bone.001/upperarm_R
+        weight: 1
+      - path: Armature/Bone/Bone.001/upperarm_R/loverarm_R
+        weight: 1
+      - path: Armature/Bone/Bone.001/upperarm_R/loverarm_R/hand_R
+        weight: 1
+      - path: Armature/Bone/Bone.001/upperarm_R/loverarm_R/hand_R/hand_R_end
+        weight: 1
+      - path: Armature/Bone/Bone.011
+        weight: 1
+      - path: Armature/Bone/Bone.011/Bone.012
+        weight: 1
+      - path: Armature/Bone/Bone.011/Bone.012/Bone.013
+        weight: 1
+      - path: Armature/Bone/Bone.011/Bone.012/Bone.013/Bone.046
+        weight: 1
+      - path: Armature/Bone/Bone.011/Bone.012/Bone.013/Bone.046/Bone.036
+        weight: 1
+      - path: Armature/Bone/Bone.011/Bone.012/Bone.013/Bone.046/Bone.036/Bone.036_end
+        weight: 1
+      - path: Armature/Bone/upperLeg_L
+        weight: 1
+      - path: Armature/Bone/upperLeg_L/lowerLeg_L
+        weight: 1
+      - path: Armature/Bone/upperLeg_L/lowerLeg_L/foot_L
+        weight: 1
+      - path: Armature/Bone/upperLeg_L/lowerLeg_L/foot_L/foot_L_end
+        weight: 1
+      - path: Armature/Bone/upperLeg_R
+        weight: 1
+      - path: Armature/Bone/upperLeg_R/lowerLeg_R
+        weight: 1
+      - path: Armature/Bone/upperLeg_R/lowerLeg_R/foot_R
+        weight: 1
+      - path: Armature/Bone/upperLeg_R/lowerLeg_R/foot_R/foot_R_end
+        weight: 1
+      - path: Armature/Bone/weapon
+        weight: 1
+      - path: Armature/Bone/weapon/weapon_end
+        weight: 1
+      - path: Armature/Bone.037
+        weight: 1
+      - path: Armature/Bone.037/Bone.037_end
+        weight: 1
+      - path: Armature/LegIK_L
+        weight: 1
+      - path: Armature/LegIK_L/LegIK_L_end
+        weight: 1
+      - path: Armature/LegIK_R
+        weight: 1
+      - path: Armature/LegIK_R/LegIK_R_end
+        weight: 1
+      - path: Armature/loverTentacleIK_L
+        weight: 1
+      - path: Armature/loverTentacleIK_L/loverTentacleIK_L_end
+        weight: 1
+      - path: Armature/loverTentacleIK_R
+        weight: 1
+      - path: Armature/loverTentacleIK_R/loverTentacleIK_R_end
+        weight: 1
+      - path: Armature/middleTentacleIK_L
+        weight: 1
+      - path: Armature/middleTentacleIK_L/middleTentacleIK_L_end
+        weight: 1
+      - path: Armature/middleTentacleIK_R
+        weight: 1
+      - path: Armature/middleTentacleIK_R/middleTentacleIK_R_end
+        weight: 1
+      - path: Armature/upperTentacleIK_L
+        weight: 1
+      - path: Armature/upperTentacleIK_L/upperTentacleIK_L_end
+        weight: 1
+      - path: Armature/upperTentacleIK_R
+        weight: 1
+      - path: Armature/upperTentacleIK_R/upperTentacleIK_R_end
+        weight: 1
+      - path: armor1
+        weight: 1
+      - path: armor2
+        weight: 1
+      - path: armor3
+        weight: 1
+      - path: armor4
+        weight: 1
+      - path: aureola
+        weight: 1
+      - path: body
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      - path: Cube.002
+        weight: 1
+      - path: Cube.003
+        weight: 1
+      - path: Cube.004
+        weight: 1
+      - path: Cube.005
+        weight: 1
+      - path: head
+        weight: 1
+      - path: helmet
+        weight: 1
+      - path: horns
+        weight: 1
+      - path: Icosphere
+        weight: 1
+      - path: Plane
+        weight: 1
+      maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
@@ -2151,6 +2338,7 @@ ModelImporter:
   animationType: 3
   humanoidOversampling: 1
   avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

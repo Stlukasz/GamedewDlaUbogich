@@ -1,4 +1,4 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/PlayerControl.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/scripts/PlayerControl.inputactions'
 
 using System;
 using System.Collections;
@@ -249,6 +249,14 @@ public class @PlayerControl : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Atack"",
+                    ""type"": ""Button"",
+                    ""id"": ""4519341c-db0a-409a-9054-dbf78e78bbd6"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -317,6 +325,17 @@ public class @PlayerControl : IInputActionCollection, IDisposable
                     ""action"": ""FightMode"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e7d07d4f-f4c3-4ede-8e5f-411da4028a97"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Atack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -333,6 +352,7 @@ public class @PlayerControl : IInputActionCollection, IDisposable
         m_PlayerActions_Jump = m_PlayerActions.FindAction("Jump", throwIfNotFound: true);
         m_PlayerActions_X = m_PlayerActions.FindAction("X", throwIfNotFound: true);
         m_PlayerActions_FightMode = m_PlayerActions.FindAction("FightMode", throwIfNotFound: true);
+        m_PlayerActions_Atack = m_PlayerActions.FindAction("Atack", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -427,6 +447,7 @@ public class @PlayerControl : IInputActionCollection, IDisposable
     private readonly InputAction m_PlayerActions_Jump;
     private readonly InputAction m_PlayerActions_X;
     private readonly InputAction m_PlayerActions_FightMode;
+    private readonly InputAction m_PlayerActions_Atack;
     public struct PlayerActionsActions
     {
         private @PlayerControl m_Wrapper;
@@ -435,6 +456,7 @@ public class @PlayerControl : IInputActionCollection, IDisposable
         public InputAction @Jump => m_Wrapper.m_PlayerActions_Jump;
         public InputAction @X => m_Wrapper.m_PlayerActions_X;
         public InputAction @FightMode => m_Wrapper.m_PlayerActions_FightMode;
+        public InputAction @Atack => m_Wrapper.m_PlayerActions_Atack;
         public InputActionMap Get() { return m_Wrapper.m_PlayerActions; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -456,6 +478,9 @@ public class @PlayerControl : IInputActionCollection, IDisposable
                 @FightMode.started -= m_Wrapper.m_PlayerActionsActionsCallbackInterface.OnFightMode;
                 @FightMode.performed -= m_Wrapper.m_PlayerActionsActionsCallbackInterface.OnFightMode;
                 @FightMode.canceled -= m_Wrapper.m_PlayerActionsActionsCallbackInterface.OnFightMode;
+                @Atack.started -= m_Wrapper.m_PlayerActionsActionsCallbackInterface.OnAtack;
+                @Atack.performed -= m_Wrapper.m_PlayerActionsActionsCallbackInterface.OnAtack;
+                @Atack.canceled -= m_Wrapper.m_PlayerActionsActionsCallbackInterface.OnAtack;
             }
             m_Wrapper.m_PlayerActionsActionsCallbackInterface = instance;
             if (instance != null)
@@ -472,6 +497,9 @@ public class @PlayerControl : IInputActionCollection, IDisposable
                 @FightMode.started += instance.OnFightMode;
                 @FightMode.performed += instance.OnFightMode;
                 @FightMode.canceled += instance.OnFightMode;
+                @Atack.started += instance.OnAtack;
+                @Atack.performed += instance.OnAtack;
+                @Atack.canceled += instance.OnAtack;
             }
         }
     }
@@ -487,5 +515,6 @@ public class @PlayerControl : IInputActionCollection, IDisposable
         void OnJump(InputAction.CallbackContext context);
         void OnX(InputAction.CallbackContext context);
         void OnFightMode(InputAction.CallbackContext context);
+        void OnAtack(InputAction.CallbackContext context);
     }
 }

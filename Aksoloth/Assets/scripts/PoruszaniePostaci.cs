@@ -165,7 +165,7 @@ public class PoruszaniePostaci : MonoBehaviour
 
     public void Jump()
     {
-        if (isOnGround)
+        if (isOnGround && !playerManager.isInteracting)
         {
             animationControl.animator.SetBool("isJumping", true);
             animationControl.PlayAnimation("jump", false);
@@ -186,8 +186,19 @@ public class PoruszaniePostaci : MonoBehaviour
 
         animationControl.PlayAnimation("dodge", true, true);
         //No damage
+        playerManager.isInteracting = true;
     }
 
+
+    public void Atack()
+    {
+        if (playerManager.isInteracting)
+            return;
+
+        animationControl.PlayAnimation("slash", true, true);
+        //No damage
+        playerManager.isInteracting = true;
+    }
 
     public void FightPreparation()
     {

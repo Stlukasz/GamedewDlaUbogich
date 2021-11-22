@@ -28,6 +28,10 @@ public class Inputs : MonoBehaviour
     public bool weaponAction = true;
     public bool triger;
 
+
+
+    public bool atack;
+
     private void Awake()
     {
         poruszaniePostaci = GetComponent<PoruszaniePostaci>();
@@ -60,6 +64,10 @@ public class Inputs : MonoBehaviour
            playerControl.PlayerActions.FightMode.performed += i => fightMode = weaponAction;
            playerControl.PlayerActions.FightMode.performed += i => triger = true;
 
+
+            //atack
+
+            playerControl.PlayerActions.Atack.performed += i => atack = true;
 
 
             //playerControl.PlayerActions.FightMode.performed += i => fightMode = false;
@@ -102,7 +110,9 @@ public class Inputs : MonoBehaviour
         Sprinting();
         Jumping();
         Dodging();
+        Atack();
         FightPreparation();
+       
     }
 
 
@@ -153,6 +163,20 @@ public class Inputs : MonoBehaviour
             {
                 poruszaniePostaci.FightEnded();
                 weaponAction = true;
+            }
+        }
+    }
+
+
+    private void Atack()
+    {
+        if(fightMode)
+        {
+            if(atack && !animationControl.animator.GetBool("isAtacking"))
+            {
+                poruszaniePostaci.Atack();
+                atack = false;
+                
             }
         }
     }

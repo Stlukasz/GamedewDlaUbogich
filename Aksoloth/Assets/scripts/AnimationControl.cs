@@ -28,7 +28,7 @@ public class AnimationControl : MonoBehaviour
         animator.SetBool("isInteracting", isInteracting);
        
         animator.SetBool("isUsingRootMotion", useRootMotion);
-        animator.CrossFade(targetAnim, 0.48f);
+        animator.CrossFade(targetAnim, 0.3f);
     }
 
 
