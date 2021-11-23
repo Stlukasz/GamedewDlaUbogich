@@ -170,13 +170,23 @@ public class Inputs : MonoBehaviour
 
     private void Atack()
     {
-        if(fightMode)
+        if(fightMode && animationControl.animator.GetBool("isGrounded"))
         {
-            if(atack && !animationControl.animator.GetBool("isAtacking"))
+            if(atack && !animationControl.animator.GetBool("isAtacking") && !animationControl.animator.GetBool("atack2"))   
             {
-                poruszaniePostaci.Atack();
+                poruszaniePostaci.Atack("slash");
                 atack = false;
                 
+            }
+            else if(atack && animationControl.animator.GetBool("isAtacking") && animationControl.animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.7)
+            {
+                poruszaniePostaci.Atack("slash2");
+                atack = false;
+            }
+            else if (atack && animationControl.animator.GetBool("atack2") && animationControl.animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.7)
+            {
+                poruszaniePostaci.Atack("slash3");
+                atack = false;
             }
         }
     }

@@ -190,12 +190,12 @@ public class PoruszaniePostaci : MonoBehaviour
     }
 
 
-    public void Atack()
+    public void Atack(string atackName)
     {
         if (playerManager.isInteracting)
             return;
 
-        animationControl.PlayAnimation("slash", true, true);
+        animationControl.PlayAnimation(atackName, true, true);
         //No damage
         playerManager.isInteracting = true;
     }
