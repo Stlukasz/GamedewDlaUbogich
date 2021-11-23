@@ -307,7 +307,7 @@ public class @PlayerControl : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""ab5ee4aa-34fb-4850-89ab-339cd1826bf2"",
-                    ""path"": ""<Keyboard>/x"",
+                    ""path"": ""<Keyboard>/q"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
