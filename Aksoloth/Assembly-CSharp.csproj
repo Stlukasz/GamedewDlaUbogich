@@ -66,6 +66,7 @@
     <Compile Include="Assets\PlayerAssets\scripts\PlayerStats.cs" />
     <Compile Include="Assets\PlayerAssets\scripts\PoruszaniePostaci.cs" />
     <Compile Include="Assets\PlayerAssets\scripts\Inputs.cs" />
+    <Compile Include="Assets\EnemyAI.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
