@@ -397,6 +397,11 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaDirect: 0.5
   m_PVRFilteringAtrousPositionSigmaIndirect: 2
   m_PVRFilteringAtrousPositionSigmaAO: 1
+--- !u!1 &511962419 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8614542818209737027, guid: a1a963d3e5cae0b408202754f86402e7, type: 3}
+  m_PrefabInstance: {fileID: 2009318248177300269}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1017,25 +1022,6 @@ RectTransform:
   m_AnchoredPosition: {x: -810, y: 514}
   m_SizeDelta: {x: 251.2, y: 16.5}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1816150642 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1667424349801442392, guid: a1a963d3e5cae0b408202754f86402e7, type: 3}
-  m_PrefabInstance: {fileID: 2009318248177300269}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1816150652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1816150642}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3c6619e04eaf4843b2831f959d88da9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthbar: {fileID: 1945192862}
-  spiritbar: {fileID: 1409773149}
 --- !u!1 &1882631968
 GameObject:
   m_ObjectHideFlags: 0
@@ -1255,6 +1241,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1816150652, guid: a1a963d3e5cae0b408202754f86402e7, type: 3}
+      propertyPath: healthbar
+      value: 
+      objectReference: {fileID: 1945192862}
+    - target: {fileID: 1816150652, guid: a1a963d3e5cae0b408202754f86402e7, type: 3}
+      propertyPath: spiritbar
+      value: 
+      objectReference: {fileID: 1409773149}
+    - target: {fileID: 2083567846, guid: a1a963d3e5cae0b408202754f86402e7, type: 3}
+      propertyPath: slashTour
+      value: 
+      objectReference: {fileID: 511962419}
     - target: {fileID: 1667424349801442392, guid: a1a963d3e5cae0b408202754f86402e7, type: 3}
       propertyPath: m_Name
       value: Player

@@ -32,6 +32,7 @@ public class Inputs : MonoBehaviour
 
     public bool atack;
 
+
     private void Awake()
     {
         poruszaniePostaci = GetComponent<PoruszaniePostaci>();

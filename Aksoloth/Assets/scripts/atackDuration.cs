@@ -6,12 +6,13 @@ public class atackDuration : StateMachineBehaviour
 {
 
     public string AtackResetName;
-
+   
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.SetBool(AtackResetName, true);
+        
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -24,6 +25,7 @@ public class atackDuration : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.SetBool(AtackResetName, false);
+        
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
